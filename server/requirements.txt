@@ -1,6 +1,4 @@
 fastapi==0.120.0
 uvicorn
 pydantic
-dotenv
-sqlalchemy 
-psycopg2 
+dotenv  
