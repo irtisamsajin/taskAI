@@ -1,10 +1,12 @@
 from contextlib import asynccontextmanager
+from dotenv import load_dotenv
 from fastapi import FastAPI,Request
 import asyncpg
 from typing import AsyncGenerator
 import os
 
-from init_db import create_tables_and_views
+from .init_db import create_tables_and_views
+load_dotenv()
 
 DB_URL=os.getenv('DATABASE_URL')
 
