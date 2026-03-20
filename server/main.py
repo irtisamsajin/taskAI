@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from dotenv import load_dotenv
 
 from .Routes import task
-from database import lifespan
+from .database import lifespan
 
 load_dotenv()
 
