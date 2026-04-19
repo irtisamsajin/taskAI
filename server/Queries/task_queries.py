@@ -1,4 +1,4 @@
-GET_TASKS_BY_ID='''
+GET_TASK_BY_ID='''
     SELECT * FROM tasks WHERE id=$1;
 '''
 GET_TASKS='''
