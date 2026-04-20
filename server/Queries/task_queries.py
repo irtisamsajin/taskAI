@@ -16,3 +16,12 @@ DELETE_TASK= '''
     WHERE id=$1
     RETURNING id;
 '''
+
+UPDATE_TASK='''
+    UPDATE tasks SET
+    title=$2,
+    description=$3,
+    due_time=$4
+    WHERE id=$1
+    RETURNING *;
+'''

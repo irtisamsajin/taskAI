@@ -10,7 +10,7 @@ class TaskCreate(BaseModel):
 class TaskResponse(BaseModel):
     id: int
     title:str
-    description:str | None
+    description: str | None
     due_time: datetime | None
     created_at: datetime | None
 
