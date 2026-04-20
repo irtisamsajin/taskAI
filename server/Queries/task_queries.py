@@ -10,3 +10,9 @@ CREATE_TASK='''
     VALUES ($1,$2,$3)
     RETURNING *;
 '''
+
+DELETE_TASK= '''
+    DELETE FROM tasks
+    WHERE id=$1
+    RETURNING id;
+'''
